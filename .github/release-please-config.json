@@ -4,5 +4,10 @@
   "commit-search-depth": 50,
   "release-type": "simple",
   "packages": {
+    ".": {
+      "package-name": "frigate-mcp",
+      "release-as": "0.0.1",
+      "exclude-paths": [".github/"]
+    }
   }
 }

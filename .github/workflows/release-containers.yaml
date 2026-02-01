@@ -5,6 +5,7 @@ on:
     branches:
       - "main"
     paths:
+      - "src/**"
       - "containers/**"
 
 # need for release-please action

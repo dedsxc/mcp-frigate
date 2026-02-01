@@ -360,7 +360,11 @@ def serve_sse():
     print()
     
     # Run with SSE transport
-    mcp.run(transport="sse")
+    mcp.run(
+        transport="sse",
+        host=config.server_host,
+        port=config.server_port,
+    )
 
 
 def serve_http():
@@ -377,13 +381,12 @@ def serve_http():
     print(f"🔗 Frigate instance: {config.base_url}")
     print()
     
-    # Set environment variables for FastMCP
-    import os
-    os.environ["MCP_HOST"] = config.server_host
-    os.environ["MCP_PORT"] = str(config.server_port)
-    
     # Run with SSE transport (FastMCP's HTTP mode)
-    mcp.run(transport="sse")
+    mcp.run(
+        transport="sse",
+        host=config.server_host,
+        port=config.server_port,
+    )
 
 
 if __name__ == "__main__":

@@ -4,5 +4,9 @@
   "commit-search-depth": 50,
   "release-type": "simple",
   "packages": {
+    "src": {
+      "package-name": "frigate-mcp",
+      "extra-files": ["containers/frigate-mcp/Dockerfile"]
+    }
   }
 }

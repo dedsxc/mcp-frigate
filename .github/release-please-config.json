@@ -6,7 +6,6 @@
   "packages": {
     ".": {
       "package-name": "frigate-mcp",
-      "release-as": "0.0.1",
       "exclude-paths": [".github/"]
     }
   }

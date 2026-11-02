@@ -360,7 +360,7 @@ def serve_sse():
     print()
     
     # Run with SSE transport
-    mcp.run(transport="sse")
+    mcp.run(transport="sse", host=config.server_host, port=config.server_port)
 
 
 def serve_http():

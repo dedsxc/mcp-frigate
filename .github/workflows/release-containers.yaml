@@ -4,8 +4,11 @@ on:
   push:
     branches:
       - "main"
-    paths:
+    paths: 
+      - "src/**"
       - "containers/**"
+      - ".github/.release-please-manifest.json"
+      - "CHANGELOG.md"
 
 # need for release-please action
 permissions:
